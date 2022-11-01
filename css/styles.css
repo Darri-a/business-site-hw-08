@@ -148,6 +148,11 @@ body {
   margin-right: 50px;
 }
 
+.header-mail:before {
+  content: "";
+  background-image: ;
+}
+
 .header-tel,
 .header-mail {
   font-weight: 500;
@@ -168,9 +173,15 @@ body {
 
 /*----------------------HERO-------------*/
 .hero {
-  background: var(--main-back-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("/images/hero-image.jpg");
   padding-top: 200px;
   padding-bottom: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-title {
