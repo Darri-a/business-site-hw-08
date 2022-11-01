@@ -28,7 +28,10 @@ ol {
   padding-left: 0;
 }
 button {
+  display: block;
   cursor: pointer;
+  border: none;
+  border-radius: 4px;
 }
 address {
   font-style: normal;
@@ -43,21 +46,31 @@ body {
   font-family: "roboto", sans-serif;
   color: var(--text-color);
   background-color: var(--second-title-color);
-  font-size: 14;
+  font-size: 14px;
   letter-spacing: 0.03em;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .list {
   list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 .link {
   text-decoration: none;
 }
 
-.current {
-  color: var(--accent-color);
-}
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -105,7 +118,7 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--text-color);
-  margin-right: 66px;
+  margin-right: 93px;
 }
 
 .header-list {
@@ -122,15 +135,16 @@ body {
   color: var(--text-color);
 }
 
-.header-connect {
-  margin-left: auto;
+.current {
+  color: var(--accent-color);
 }
 
 .header-list-contacts {
   display: flex;
+  margin-left: auto;
 }
 
-.header-mail {
+.header-list-mail {
   margin-right: 50px;
 }
 
@@ -167,6 +181,8 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--second-title-color);
+  width: 696px;
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 
@@ -255,17 +271,13 @@ body {
 .team-list {
   display: flex;
   margin-top: 50px;
-  gap: 20px;
+  gap: 30px;
 }
 
 .team-item {
   width: 270px;
-  height: 368px;
 }
 
-.team-photo {
-  margin-bottom: 30px;
-}
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -293,6 +305,10 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.team-text-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .team-position {
   font-size: 16px;
@@ -327,6 +343,10 @@ body {
   color: var(--second-title-color);
 }
 
+.contacts-item {
+  margin-bottom: 9px;
+}
+
 .contacts-adress {
   margin-top: 20px;
 }
@@ -352,7 +372,7 @@ body {
 }
 /* ---------------------PORTFOLIO------------------------*/
 
-.portf-container {
+.portf-about {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -379,10 +399,13 @@ body {
 .portf-about-list {
   display: flex;
   justify-content: center;
+  gap: 8px;
 }
+
 .portf-about-list {
   display: flex;
   gap: 8px;
+  margin-bottom: 50px;
 }
 
 .portf-about-button:hover {
@@ -397,9 +420,6 @@ body {
 
 .portf-project-item {
   width: 370px;
-  height: 404px;
-  background: var(--second-title-color);
-  border: 1px solid var(--second-border-color);
 }
 
 .portf-project-subtitle {
@@ -412,6 +432,7 @@ body {
 
 .portf-text-container {
   padding: 20px 24px;
+  border: 1px solid var(--second-border-color);
 }
 
 .portf-project-text {
