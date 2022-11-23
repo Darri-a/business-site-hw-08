@@ -89,7 +89,6 @@ body {
 
 .header {
   padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid var(--main-header-border);
 }
 
@@ -103,6 +102,7 @@ body {
 
 .header-navigation {
   display: flex;
+  align-items: center;
 }
 
 .header-logo {
@@ -124,38 +124,40 @@ body {
 .header-item {
   position: relative;
 }
-.header-item:after {
-  content: "";
-  background-color: var(--accent-color);
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  display: block;
-  position: absolute;
-  bottom: -28px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transform: scale(0);
-}
-.current:after {
-  content: "";
-  background-color: var(--accent-color);
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  display: block;
-  position: absolute;
-  bottom: -28px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header-item:hover::after {
-  transform: scale(1);
-}
+
 .header-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
+  position: relative;
+  display: block;
+  padding: 32px 0;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
+
+.header-link::after,
+.header-link::after {
+  content: "";
+  background-color: var(--accent-color);
+  width: 0;
+  height: 4px;
+  border-radius: 2px;
+  display: block;
+  bottom: 0;
+  position: absolute;
+  transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-link:hover::after,
+.header-link:focus::after {
+  width: 100%;
 }
 
 .current {
@@ -187,8 +189,6 @@ body {
   margin-right: 10px;
 }
 
-.header-link:hover,
-.header-link:focus,
 .header-mail-link:hover,
 .header-mail-link:focus,
 .header-tel-link:hover,
@@ -198,7 +198,7 @@ body {
 }
 
 .header-mail-link:hover .header-icon {
-  stroke: var(--accent-color);
+  color: var(--accent-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*----------------------HERO-------------*/
@@ -311,6 +311,33 @@ body {
 .content-list:not(:last-child) {
   margin-right: 30px;
 }
+
+.content-item {
+  position: relative;
+}
+
+.content-top {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  text-align: left;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.content-top-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--second-title-color);
+}
+
 .content-title {
   font-weight: 700;
   font-size: 36px;
@@ -394,13 +421,14 @@ body {
   align-items: center;
   justify-content: center;
   color: var(--main-icon-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-link:hover,
 .team-soc-link:focus {
   background-color: var(--accent-color);
   color: var(--second-title-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-icon {
@@ -444,12 +472,12 @@ body {
   border: 1px solid currentColor;
   border-radius: 4px;
   color: #afb1b8;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .partners-link:hover,
 .partners-link:focus {
   color: var(--accent-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .partners-icon {
@@ -494,6 +522,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-title-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link {
@@ -501,6 +530,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-contacts-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-map-link:hover,
@@ -508,7 +538,6 @@ body {
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--accent-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*-----------------------SOCIAL---------------------*/
@@ -538,6 +567,8 @@ body {
   align-items: center;
   justify-content: center;
   background: rgba(255, 255, 255, 0.1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
@@ -547,12 +578,10 @@ body {
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover .social-icon {
   fill: var(--second-title-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
@@ -578,6 +607,9 @@ body {
   outline: none;
   border-radius: 4px;
   padding: 6px 22px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portf-butten-container {
@@ -602,7 +634,6 @@ body {
   color: var(--main-btn-color);
   box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
     0px 2px 2px rgb(0 0 0 / 12%);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portf-project {
@@ -617,15 +648,16 @@ body {
 
 .portf-project-link {
   display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portf-project-item {
   width: 370px;
 }
 
-.portf-project-item:hover .portf-project-top {
+.portf-project-link:hover .portf-project-top,
+portf-project-link:focus .portf-project-top {
   transform: translateY(0);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portf-project-wrap {
   overflow: hidden;
@@ -639,7 +671,7 @@ body {
   background: var(--accent-color);
   padding: 63px 24px;
   transform: translateY(100%);
-  transition: transform 250ms linear;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portf-project-top-text {
@@ -675,7 +707,6 @@ body {
 .portf-project-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*--------------------------------------------*/
@@ -690,12 +721,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-}
-
-.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
+  transition: ;
 }
 
 .modal {
@@ -728,4 +754,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
