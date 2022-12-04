@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-.header-navigation {
+.navigation {
   display: flex;
   align-items: center;
   & span {
@@ -31,11 +31,11 @@
   gap: 50px;
 }
 
-.header-item {
+.menu__item {
   position: relative;
 }
 
-.header-link {
+.menu__link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -70,17 +70,17 @@
   color: var(--accent-color);
 }
 
-.header-list-contacts {
+.connect {
   display: flex;
   margin-left: auto;
 }
 
-.header-item-mail {
+.connect__mail {
   margin-right: 50px;
 }
 
-.header-tel-link,
-.header-mail-link {
+.connect__tel__link,
+.connect__mail__link {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -95,7 +95,7 @@
   }
 }
 
-.header-icon {
+.connect__icon {
   fill: currentColor;
   margin-right: 10px;
 }
