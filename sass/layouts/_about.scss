@@ -2,15 +2,15 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.about-list {
+.info__list {
   display: flex;
   gap: 30px;
 }
-.about-item {
+.info__item {
   width: 270px;
 }
 
-.about-item-subtitle {
+.info__subtitle {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -21,19 +21,19 @@
   margin-bottom: 10px;
 }
 
-.about-item-text {
+.info__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--contacts-color);
 }
 
-.about-icon-link {
+.info__icon__link {
   display: flex;
   gap: 30px;
 }
 
-.about-icon-link {
+.info__icon__link {
   width: 270px;
   height: 120px;
   background: #f5f4fa;
