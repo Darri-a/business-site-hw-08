@@ -1,4 +1,4 @@
-.social-title {
+.media__title {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -6,17 +6,17 @@
   margin-bottom: 20px;
 }
 
-.social-list {
+.media__list {
   display: flex;
   gap: 10px;
 }
 
-.social-item {
+.media__item {
   width: 44px;
   height: 44px;
 }
 
-.social-link {
+.media__link {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -35,6 +35,6 @@
   }
 }
 
-.social-icon {
+.media__icon {
   fill: var(--second-title-color);
 }

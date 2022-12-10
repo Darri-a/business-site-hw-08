@@ -1,8 +1,8 @@
-.portf-about {
+.products {
   padding-top: 94px;
 }
 
-.portf-about-button {
+.products__button {
   font-family: "Roboto";
   background: var(--third-back-color);
   font-weight: 500;
@@ -27,18 +27,13 @@
   }
 }
 
-.portf-butten-container {
+.products__container {
   margin-bottom: 34px;
 }
 
-.portf-about-list {
+.products__list {
   display: flex;
   justify-content: center;
-  gap: 8px;
-}
-
-.portf-about-list {
-  display: flex;
   gap: 8px;
   margin-bottom: 50px;
 }

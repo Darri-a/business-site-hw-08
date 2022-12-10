@@ -67,6 +67,17 @@
 
 .current {
   color: var(--accent-color);
+  &::after,
+  &::after {
+    content: "";
+    background-color: var(--accent-color);
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    display: block;
+    bottom: 0;
+    position: absolute;
+  }
 }
 
 .header__connect {

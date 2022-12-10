@@ -1,21 +1,22 @@
 .contacts {
   background: var(--main-back-color);
+  padding: 60px 0;
 }
 
-.container-contacts {
+.connect__container {
   display: flex;
   gap: 70px;
   align-items: baseline;
 }
-.contacts span {
+.connect__logo span {
   color: var(--accent-color);
 }
 
-.contacts-adress {
+.connect__adress {
   font-style: normal;
 }
 
-.contacts-logo {
+.connect__logo {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -26,11 +27,11 @@
   display: inline-block;
 }
 
-.contacts-item:not(:last-child) {
+.connect__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.contacts-map-link {
+.connect__map__link {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -42,7 +43,7 @@
   }
 }
 
-.contacts-link {
+.connect__link {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;

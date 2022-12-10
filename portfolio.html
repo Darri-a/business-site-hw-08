@@ -18,7 +18,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
   </head>
   <body class="site-body">
     <header class="header">
@@ -29,17 +30,19 @@
           >
           <ul class="menu list">
             <li class="menu__item">
-              <a class="menu__link link current" href="index.html">Студія</a>
+              <a class="menu__link link" href="index.html">Студія</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link link" href="./portfolio.html">Портфоліо</a>
+              <a class="menu__link link current" href="./portfolio.html"
+                >Портфоліо</a
+              >
             </li>
             <li class="menu__item">
               <a class="menu__link link" href="#">Контакти</a>
             </li>
           </ul>
         </nav>
-        <ul class="connect list">
+        <ul class="connect header__connect list">
           <li class="connect__mail">
             <a
               class="connect__mail__link link"
@@ -63,28 +66,24 @@
       </div>
     </header>
     <main>
-      <section class="portf-about">
-        <div class="container portf-container">
-          <h1 class="portf-about-title visually-hidden">Розділи</h1>
-          <ul class="portf-about-list">
-            <li class="portf-about-item list">
-              <button class="portf-about-button" type="button">Усі</button>
+      <section class="products">
+        <div class="container products__container">
+          <h1 class="products__title visually-hidden">Розділи</h1>
+          <ul class="products__list">
+            <li class="products__item list">
+              <button class="products__button" type="button">Усі</button>
             </li>
-            <li class="portf-about-item list">
-              <button class="portf-about-button" type="button">
-                Веб-сайти
-              </button>
+            <li class="products__item list">
+              <button class="products__button" type="button">Веб-сайти</button>
             </li>
-            <li class="portf-about-item list">
-              <button class="portf-about-button" type="button">Додатки</button>
+            <li class="products__item list">
+              <button class="products__button" type="button">Додатки</button>
             </li>
-            <li class="portf-about-item list">
-              <button class="portf-about-button" type="button">Дизайн</button>
+            <li class="products__item list">
+              <button class="products__button" type="button">Дизайн</button>
             </li>
-            <li class="portf-about-item list">
-              <button class="portf-about-button" type="button">
-                Маркетинг
-              </button>
+            <li class="products__item list">
+              <button class="products__button" type="button">Маркетинг</button>
             </li>
           </ul>
 
@@ -318,83 +317,81 @@
       </section>
     </main>
     <footer class="contacts">
-      <div class="container container-contacts">
-        <div class="contacts-adress">
-          <a class="contacts-logo link" href="./index.html"
+      <div class="container connect__container">
+        <div class="connect__adress">
+          <a class="connect__logo link" href="./index.html"
             ><span>Web</span>Studio</a
           >
-          <ul class="contacts-list">
-            <li class="contacts-item list">
+          <ul class="connect__list">
+            <li class="connect__item list">
               <a
-                class="contacts-map-link link"
+                class="connect__map__link link"
                 href="https://goo.gl/maps/PxVv6zcFwPhAKh3s5"
                 target="_blank"
                 rel="noreferrer nofollow"
                 >м. Київ, пр-т Лесі Українки, 26</a
               >
             </li>
-            <li class="contacts-item list">
-              <a class="contacts-link link" href="mailto:info@devstudio.com"
+            <li class="connect__item list">
+              <a class="connect__link link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="contacts-item list">
-              <a class="contacts-link link" href="tel:+380961111111"
+            <li class="connect__item list">
+              <a class="connect__link link" href="tel:+380961111111"
                 >+38 096 111 11 11</a
               >
             </li>
           </ul>
         </div>
         <div class="social-container">
-          <p class="social-title">Приєднуйтесь</p>
-          <ul class="social-list list">
-            <li class="social-item">
-              <a href="" class="social-link link">
-                <svg class="social-icon" width="20" height="20">
+          <p class="media__title">Приєднуйтесь</p>
+          <ul class="media__list list">
+            <li class="media__item">
+              <a href="" class="media__link link">
+                <svg class="media__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
-              <a href="" class="social-link link">
-                <svg class="social-icon" width="20" height="20">
+            <li class="media__item">
+              <a href="" class="media__link link">
+                <svg class="media__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
-              <a href="" class="social-link link">
-                <svg class="social-icon" width="20" height="20">
+            <li class="media__item">
+              <a href="" class="media__link link">
+                <svg class="media__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
-              <a href="" class="social-link link">
-                <svg class="social-icon" width="20" height="20">
+            <li class="media__item">
+              <a href="" class="media__link link">
+                <svg class="media__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="online section">
-          <h2 class="online-title">Підпишіться на розсилку</h2>
-          <form action="#" class="online-form">
-            <div class="online-part">
-              <input
-                type="email"
-                name="email"
-                class="online-input"
-                placeholder="E-mail"
-              />
-              <button class="online-btn" type="submit">
-                Підписатися
-                <svg class="online-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-              </button>
-            </div>
+        <div class="online">
+          <h2 class="form__title">Підпишіться на розсилку</h2>
+          <form action="#" class="form">
+            <input
+              type="email"
+              name="email"
+              class="form__input"
+              placeholder="E-mail"
+            />
+            <button class="form__btn" type="submit">
+              Підписатися
+              <svg class="form__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
