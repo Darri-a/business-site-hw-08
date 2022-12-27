@@ -1,20 +1,22 @@
-@import "./base/reset";
 @import "./utils/placeholders";
-@import "./base/common";
-@import "./components/container";
-
 @import "./utils/hidden";
 @import "./utils/vars";
+
+@import "./base/common";
+@import "./base/reset";
+
+@import "./components/container";
+@import "./components/backdrop";
+@import "./components/online";
+@import "./components/partners";
+@import "./components/section";
+@import "./components/social";
 
 @import "./layouts/_header";
 @import "./layouts/hero";
 @import "./layouts/about";
 @import "./layouts/content";
 @import "./layouts/team";
-@import "./layouts/partners";
 @import "./layouts/contacts";
-@import "./layouts/social";
-@import "./layouts/online";
 @import "./layouts/portf-about";
 @import "./layouts/portf-project";
-@import "./layouts/backdrop";
