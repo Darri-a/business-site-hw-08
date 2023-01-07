@@ -1,3 +1,17 @@
+.online {
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    .social_footer {
+      margin-left: 165px;
+      margin-top: 0px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .social_footer {
+      margin-left: 70px;
+    }
+  }
+}
 .form__title {
   font-weight: 700;
   font-size: 14px;
@@ -6,10 +20,12 @@
   text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--second-title-color);
+  display: flex;
+  justify-content: center;
 }
 
 .form__input {
-  width: 358px;
+  width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -17,6 +33,7 @@
   background-color: transparent;
   padding-left: 16px;
   color: var(--main-btn-color);
+  max-width: 450px;
   &::placeholder {
     font-size: 16px;
     line-height: 1.25;
@@ -49,4 +66,7 @@
 .form {
   display: flex;
   gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
 }

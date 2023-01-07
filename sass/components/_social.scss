@@ -1,14 +1,20 @@
+.social-container {
+  width: 100%;
+}
 .media__title {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--second-title-color);
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .media__list {
   display: flex;
   gap: 10px;
+  justify-content: center;
 }
 
 .media__item {
