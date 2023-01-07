@@ -1,6 +1,11 @@
 .social-container {
   width: 100%;
+  margin-top: 60px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
 }
+
 .media__title {
   font-weight: 700;
   line-height: 1.14;

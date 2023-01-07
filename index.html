@@ -39,6 +39,11 @@
             </li>
           </ul>
         </nav>
+        <div class="menu-btn menu-toggle js-open-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <ul class="connect header__connect list">
           <li class="connect__mail">
             <a
@@ -570,7 +575,51 @@
         </div>
       </div>
     </footer>
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="menu-container js-menu-container">
+      <button class="menu-toggle js-close-menu">
+        <svg class="modal__icon" width="18" height="18">
+          <use href="./images/icons.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li class="mobail-nav list">
+          <a class="mobail-link link" href=""> Студія</a>
+        </li>
+        <li class="mobail-nav list">
+          <a class="mobail-link link" href=""> Портфоліо</a>
+        </li>
+        <li class="mobail-nav list">
+          <a class="mobail-link link" href=""> Контакти</a>
+        </li>
+      </ul>
+      <ul class="mobile-menu-contact">
+        <li class="mobail-contact list">
+          <a class="mobail-phone link" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobail-contact list">
+          <a class="mobail-mail link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-menu-social">
+        <li class="mobail-social list">
+          <a class="mobail-social-link link" href="">Instagram</a>
+        </li>
+        <li class="mobail-social list">
+          <a class="mobail-social-link link" href="">Twitter</a>
+        </li>
+        <li class="mobail-social list">
+          <a class="mobail-social-link link" href="">Facebook</a>
+        </li>
+        <li class="mobail-social list">
+          <a class="mobail-social-link link" href="">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__close" data-modal-close>
           <svg class="modal__icon" width="18" height="18">
@@ -656,7 +705,7 @@
           <button class="modal__btn" type="submit">Відправити</button>
         </form>
       </div>
-    </div> -->
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
