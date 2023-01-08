@@ -1,8 +1,12 @@
 .social-container {
   width: 100%;
   margin-top: 60px;
+  text-align: center;
   @media screen and (min-width: 768px) {
     margin-top: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: start;
   }
 }
 
@@ -12,14 +16,14 @@
   text-transform: uppercase;
   color: var(--second-title-color);
   margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
 }
 
 .media__list {
   display: flex;
   gap: 10px;
-  justify-content: center;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .media__item {

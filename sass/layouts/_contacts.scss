@@ -7,15 +7,18 @@
   display: flex;
   flex-wrap: wrap;
   gap: 60px;
-  align-items: center;
-  justify-content: center;
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+    align-items: center;
+  }
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
+    text-align: start;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .connect__tablet {
+.connect__tablet {
+  @media screen and (min-width: 768px) {
     display: flex;
     align-items: baseline;
     justify-content: center;
@@ -30,6 +33,10 @@
 .connect__adress {
   font-style: normal;
   width: 100%;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .connect__logo {
@@ -40,18 +47,13 @@
   letter-spacing: 0.03em;
   color: var(--second-title-color);
   margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
+  display: block;
 }
 
 .connect__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.connect__item {
-  display: flex;
-  justify-content: center;
-}
 .connect__map__link {
   font-size: 14px;
   line-height: 1.71;
